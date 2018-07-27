@@ -17,7 +17,7 @@ default:
       authentication: :login
       domain: 'smtp.sendgrid.net'
       user_name: 'apikey'
-      password: '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' 
+      password: '' 
   #
   # ==== SMTP server at example.com using PLAIN authentication
   #
