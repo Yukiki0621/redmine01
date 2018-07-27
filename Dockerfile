@@ -1,9 +1,10 @@
 FROM redmine:3.2
 
 # Setting Mail of Redmine
-COPY configuration.yml /usr/src/redmine/config/
-RUN chmod 777 /usr/src/redmine/config/configuration.yml \
-  && rm -rf /usr/src/redmine/config/configuration.yml.example
+COPY configuration.yml /home/redmine/config/
+RUN chmod 777 /home/redmine/config/configuration.yml \
+  && rm -rf /usr/src/redmine/config/configuration.yml.example \
+  && ln -s /home/redmine/config/configuration.yml /usr/src/redmine/config/configuration.yml
 
 # ------------------------
 # SSH Server support
