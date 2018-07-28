@@ -1,4 +1,4 @@
-FROM redmine:latest
+FROM redmine:3.2
 
 # Setting Mail of Redmine
 RUN rm -rf /usr/src/redmine/config/configuration.yml.example \
