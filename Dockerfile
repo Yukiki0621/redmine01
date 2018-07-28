@@ -1,4 +1,4 @@
-FROM redmine:3.2
+FROM redmine:latest
 
 # Setting Mail of Redmine
 COPY configuration.yml /home/redmine/config/
