@@ -3,9 +3,7 @@ FROM redmine:3.2
 # Setting Mail of Redmine
 RUN rm -rf /usr/src/redmine/config/configuration.yml.example \
   && ln -s /home/redmine/config/configuration.yml /usr/src/redmine/config/configuration.yml \
-  && rm -rf /usr/src/redmine/config/database.yml \
   && ln -s /home/redmine/config/database.yml /usr/src/redmine/config/database.yml
-  
 
 # ------------------------
 # SSH Server support
